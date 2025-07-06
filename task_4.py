@@ -33,7 +33,7 @@ def add_edges(graph, node, pos, x=0, y=0, layer=1):
 def draw_tree(tree_root):
     tree = nx.DiGraph()
     pos = {tree_root.id: (0, 0)}
-    ree = add_edges(tree, tree_root, pos)
+    tree = add_edges(tree, tree_root, pos)
 
     colors = [node[1]['color'] for node in tree.nodes(data=True)]
     labels = {node[0]: node[1]['label'] for node in tree.nodes(data=True)} # Використовуйте значення вузла для міток
