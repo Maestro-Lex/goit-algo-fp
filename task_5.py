@@ -120,6 +120,7 @@ def dfs_visualize(root):
             if vertex.left:
                 stack.append(vertex.left)
             i += 1
+        plt.clf()
         draw_tree(root, visual = True)
         plt.pause(1)
     plt.show()
@@ -146,6 +147,7 @@ def bfs_visualize(root):
             if vertex.right:
                 queue.append(vertex.right)
             i += 1
+        plt.clf()
         draw_tree(root, visual = True)
         plt.pause(1)
     plt.show()
